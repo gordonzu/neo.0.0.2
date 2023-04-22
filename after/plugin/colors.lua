@@ -1,3 +1,6 @@
+--require('lsp-zero').setup{}
+require('lsp-zero')
+
 require("tokyonight").setup({
     --style = "night",
     --style = "storm",
