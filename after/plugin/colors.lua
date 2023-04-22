@@ -2,7 +2,7 @@ require("tokyonight").setup({
     --style = "night",
     --style = "storm",
     --style = "moon",
-    style = "day",
+    --style = "day",
     transparent = false,
     terminal_colors = true,
     styles = {
@@ -23,9 +23,9 @@ require("tokyonight").setup({
 
 function MyColor(color)
 	--color = color or "orbital"
-	color = color or "tokyonight"
+	--color = color or "tokyonight"
 	--color = color or "afterglow"
-	--color = color or "PaperColor"
+	color = color or "PaperColor"
 	--color = color or "github"
 	--color = color or "atom"
 	vim.cmd.colorscheme(color)
