@@ -1,8 +1,8 @@
 require("tokyonight").setup({
-    style = "night",
+    --style = "night",
     --style = "storm",
     --style = "moon",
-    --style = "day",
+    style = "day",
     transparent = false,
     terminal_colors = true,
     styles = {
