@@ -13,8 +13,8 @@ require("tokyonight").setup({
         keywords = { italic = true },
         functions = {},
         variables = {},
-        sidebars = {},
-        floats = {},
+        sidebars = dark,
+        floats = dark,
     },    
    --sidebars = { "qf", "vista_kind", "terminal", "packer" },
    sidebars = {},
@@ -64,8 +64,6 @@ material.setup({
          darker = true -- Enable higher contrast text for darker style
     },
 })
-
-
 
 
 
