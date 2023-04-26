@@ -20,14 +20,6 @@ vim.opt.updatetime = 50
 vim.opt.background = dark
 vim.opt.guifont = "monospace:h17"
 
-vim.cmd([[ 
-    augroup MyFileTypes
-    autocmd!
-    autocmd BufRead,BufNewFile *.html.erb set filetype=eruby.html
-    autocmd BufRead,BufNewFile *.html set filetype=html
-    augroup end 
-]])
-
 vim.cmd([[
     augroup MyColors
     autocmd!
