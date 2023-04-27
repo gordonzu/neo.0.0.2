@@ -50,9 +50,6 @@ vim.cmd([[
 --    nnoremap <silent> <F2> :NERDTreeToggle<cr>
 --]])    
 
-
-   
-
 --vim.cmd([[
 --    set statusline=
 --     set statusline+=%F

@@ -48,13 +48,13 @@ return require('packer').startup(function(use)
 
     use {'lewis6991/gitsigns.nvim'}
 
-    use{'numToStr/Comment.nvim'} 
+    use{'numToStr/Comment.nvim'}
 
     -- colorschemes
     use({'marko-cerovac/material.nvim', as = 'material',})
     use({'fcpg/vim-orbital', as = 'orbital',})
-    use({'rose-pine/neovim', as = 'rose-pine',})  
-    use({'projekt0n/github-nvim-theme', tag = 'v0.0.7',})	
+    use({'rose-pine/neovim', as = 'rose-pine',})
+    use({'projekt0n/github-nvim-theme', tag = 'v0.0.7',})
     use({'folke/tokyonight.nvim', as = 'tokyonight',})
 
 

@@ -20,17 +20,6 @@ telescope.setup {
   }
 }
 
-vim.keymap.set('n', '<leader>fs', function() 
-	telescope_builtin.find_files({
-		find_command = { 'rg', '--files', '-g', '!.git', '--hidden' },});	
-end)
-
-vim.keymap.set('n', '<C-p>', telescope_builtin.git_files, {})
-
-vim.keymap.set('n', '<leader>ps', function()
-	telescope_builtin.grep_string({ search = vim.fn.input("Grep > ") });
-end)
-
 
 
 
