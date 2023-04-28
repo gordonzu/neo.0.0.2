@@ -1,5 +1,4 @@
 local telescope = require 'telescope'
-local telescope_builtin = require 'telescope.builtin'
 
 telescope.setup {
   defaults = {
@@ -10,6 +9,7 @@ telescope.setup {
     vimgrep_arguments = {
       'rg',
       '--color=never',
+      --'!.git',
       '--no-heading',
       '--with-filename',
       '--line-number',

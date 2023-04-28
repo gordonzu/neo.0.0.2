@@ -26,6 +26,7 @@ vim.keymap.set('n', '<leader>sf', function()
 end)
 vim.keymap.set('n', '<leader>gf', telescope_builtin.git_files, {})
 vim.keymap.set('n', '<leader>sd', telescope_builtin.diagnostics, {})
+vim.keymap.set('n', '<leader>sg', telescope_builtin.live_grep, {})
 vim.keymap.set('n', '<leader>sw', function()
 	telescope_builtin.grep_string({ search = vim.fn.input("Grep > ") });
 end)
