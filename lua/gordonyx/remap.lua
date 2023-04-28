@@ -20,15 +20,17 @@ vim.keymap.set("n", "<leader>y", "\"+Y")
 vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<leader>]", "<cmd>tabnext<cr>")
 vim.keymap.set("n", "<leader>[", "<cmd>tabprev<cr>")
-vim.keymap.set('n', '<leader>sf', function()
-	telescope_builtin.find_files({
-		find_command = { 'rg', '--files', '-g', '!.git', '--hidden' },});
-end)
 vim.keymap.set('n', '<leader>gf', telescope_builtin.git_files, {})
 vim.keymap.set('n', '<leader>sd', telescope_builtin.diagnostics, {})
 vim.keymap.set('n', '<leader>sg', telescope_builtin.live_grep, {})
+
 vim.keymap.set('n', '<leader>sw', function()
 	telescope_builtin.grep_string({ search = vim.fn.input("Grep > ") });
 end)
 
+vim.keymap.set('n', '<leader>sf', function()
+	telescope_builtin.find_files({
+		find_command = { 'rg', '--files', '-g', '!.git', '--hidden' },});
+end)
 
+vim.keymap.set('n', '<leader>vv', vim.cmd.Vexplore)
