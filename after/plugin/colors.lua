@@ -6,7 +6,7 @@ require("tokyonight").setup({
     --style = "storm",
     --style = "moon",
     --style = "day",
-    transparent = false,
+    transparent = true,
     terminal_colors = true,
     styles = {
         comments = { italic = true },
@@ -15,29 +15,27 @@ require("tokyonight").setup({
         variables = {},
         sidebars = dark,
         floats = dark,
-    },    
-   --sidebars = { "qf", "vista_kind", "terminal", "packer" },
+    },
    sidebars = {},
     on_colors = function(colors)
         colors.hint = colors.orange
         colors.error = "#ff0000"
     end
-})    
+})
 
 local material = require('material')
 local colors = require ('material.colors')
-local funcs = require ('material.functions')
 
 material.setup({
     custom_highlights = {
         SignColumn = { bg = 'none' },
         CursorLine = { fg = colors.editor.constrast , underline = false },
     },
-     styles = { -- Give comments style such as bold, italic, underline etc.
+     styles = {
          comments = { italic = true },
-         strings = {  bold = true  },
-         keywords = {  underline = true  },
-         functions = {  bold = true, undercurl = true  },
+         strings = {},
+         keywords = { italic = true },
+         functions = {},
          variables = {},
          operators = {},
          types = {},
@@ -69,7 +67,7 @@ material.setup({
 
 function MyColor(color)
 	--color = color or "orbital"
-	color = color or "tokyonight"
+	color = color or "tokyonight-night"
 	--color = color or "PaperColor"
 	--color = color or "github"
 	vim.cmd.colorscheme(color)

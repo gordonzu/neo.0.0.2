@@ -16,6 +16,7 @@ return require('packer').startup(function(use)
     use('tpope/vim-dadbod')
     use('kristijanhusak/vim-dadbod-ui')
     use('lukas-reineke/indent-blankline.nvim')
+    use('Shatur/neovim-cmake')
 
     use {
 	    'VonHeikemen/lsp-zero.nvim',
@@ -56,8 +57,8 @@ return require('packer').startup(function(use)
     use({'rose-pine/neovim', as = 'rose-pine',})
     use({'projekt0n/github-nvim-theme', tag = 'v0.0.7',})
     use({'folke/tokyonight.nvim', as = 'tokyonight',})
-
-
+    use({'oxfist/night-owl.nvim', as = 'nightowl',})
+    use({'catppuccin/nvim', as = "catppuccin"})
 
 
 

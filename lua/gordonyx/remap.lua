@@ -3,6 +3,7 @@ local telescope_builtin = require 'telescope.builtin'
 vim.g.mapleader = " "
 
 vim.keymap.set('n', "<leader>ff", vim.cmd.Ex)
+vim.keymap.set('n', '<leader>vv', vim.cmd.Vexplore)
 vim.keymap.set("n", "<leader>du", vim.cmd.DBUIToggle)
 vim.keymap.set("n", "<leader>df", vim.cmd.DBUIFindBuffer)
 vim.keymap.set("n", "<leader>dr", vim.cmd.DBUIRenameBuffer)
@@ -24,6 +25,10 @@ vim.keymap.set('n', '<leader>gf', telescope_builtin.git_files, {})
 vim.keymap.set('n', '<leader>sd', telescope_builtin.diagnostics, {})
 vim.keymap.set('n', '<leader>sg', telescope_builtin.live_grep, {})
 
+vim.keymap.set("n", "<leader>z", function()
+    require("material.functions").find_style()
+end)
+
 vim.keymap.set('n', '<leader>sw', function()
 	telescope_builtin.grep_string({ search = vim.fn.input("Grep > ") });
 end)
@@ -33,4 +38,3 @@ vim.keymap.set('n', '<leader>sf', function()
 		find_command = { 'rg', '--files', '-g', '!.git', '--hidden' },});
 end)
 
-vim.keymap.set('n', '<leader>vv', vim.cmd.Vexplore)
