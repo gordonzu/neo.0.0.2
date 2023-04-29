@@ -1,28 +1,3 @@
---require('lsp-zero').setup{}
-require('lsp-zero')
-
-require("tokyonight").setup({
-    style = "night",
-    --style = "storm",
-    --style = "moon",
-    --style = "day",
-    transparent = true,
-    terminal_colors = true,
-    styles = {
-        comments = { italic = true },
-        keywords = { italic = true },
-        functions = {},
-        variables = {},
-        sidebars = dark,
-        floats = dark,
-    },
-   sidebars = {},
-    on_colors = function(colors)
-        colors.hint = colors.orange
-        colors.error = "#ff0000"
-    end
-})
-
 local material = require('material')
 local colors = require ('material.colors')
 
@@ -63,17 +38,9 @@ material.setup({
     },
 })
 
-
-
 function MyColor(color)
-	--color = color or "orbital"
 	color = color or "tokyonight-night"
-	--color = color or "PaperColor"
-	--color = color or "github"
 	vim.cmd.colorscheme(color)
-
-	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
 MyColor()
