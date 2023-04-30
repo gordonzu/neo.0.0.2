@@ -2,7 +2,7 @@ local telescope_builtin = require 'telescope.builtin'
 
 vim.g.mapleader = " "
 
-vim.keymap.set('n', "<leader>ff", vim.cmd.Ex)
+vim.keymap.set('n', "<F12>", vim.cmd.NERDTreeToggle)
 vim.keymap.set('n', '<leader>vv', vim.cmd.Vexplore)
 vim.keymap.set("n", "<leader>du", vim.cmd.DBUIToggle)
 vim.keymap.set("n", "<leader>df", vim.cmd.DBUIFindBuffer)

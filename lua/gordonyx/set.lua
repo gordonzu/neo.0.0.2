@@ -19,7 +19,7 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 vim.opt.timeoutlen = 1000
 vim.opt.updatetime = 50
-vim.opt.background = dark
+--vim.opt.background = dark
 vim.opt.guifont = "monospace:h17"
 vim.opt.omnifunc = "v:lua.vim.lsp.omnifunc"
 

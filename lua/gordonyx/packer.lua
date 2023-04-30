@@ -16,7 +16,10 @@ return require('packer').startup(function(use)
     use('tpope/vim-dadbod')
     use('kristijanhusak/vim-dadbod-ui')
     use('lukas-reineke/indent-blankline.nvim')
-    use('Shatur/neovim-cmake')
+    use('cdelledonne/vim-cmake')
+    use('preservim/nerdtree')
+    use('lewis6991/gitsigns.nvim')
+    use('numToStr/Comment.nvim')
 
     use {
 	    'VonHeikemen/lsp-zero.nvim',
@@ -46,10 +49,6 @@ return require('packer').startup(function(use)
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
-
-    use {'lewis6991/gitsigns.nvim'}
-
-    use{'numToStr/Comment.nvim'}
 
     -- colorschemes
     use({'marko-cerovac/material.nvim', as = 'material',})
