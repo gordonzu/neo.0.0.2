@@ -68,6 +68,15 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
+local servers = {
+    'tsserver',
+    'lua_ls',
+    'pylsp',
+    'quick_lint_js',
+    'cmake',
+    'clangd',
+}
+
 require('lspconfig').tsserver.setup({
     single_file_support = false,
     on_attach = function(client, bufnr)
@@ -111,7 +120,7 @@ require('lspconfig').cmake.setup({
 })
 
 require('lspconfig').clangd.setup({
-    single_file_support = false,
+    single_file_support = true,
     on_attach = function(client, bufnr)
         print('hello clangd')
     end

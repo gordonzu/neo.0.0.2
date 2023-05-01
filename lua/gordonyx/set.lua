@@ -50,14 +50,14 @@ vim.cmd([[
 --    nnoremap <silent> <F2> :NERDTreeToggle<cr>
 --]])    
 
---vim.cmd([[
---    set statusline=
---     set statusline+=%F
---    " set statusline+=%t\ %m%-y%-r%w%<
---    set statusline+=%=line:%-5l\ column:%-4v
---    set laststatus=2
---    set fillchars+=vert:\ 
---]])
+vim.cmd([[
+   set statusline=
+    set statusline+=%F
+   " set statusline+=%t\ %m%-y%-r%w%<
+   set statusline+=%=line:%-5l\ column:%-4v
+   set laststatus=2
+   set fillchars+=vert:\ 
+]])
 
 
 
