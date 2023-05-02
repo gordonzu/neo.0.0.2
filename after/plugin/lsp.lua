@@ -13,7 +13,7 @@ lsp.ensure_installed({
   'pylsp',
   'quick_lint_js',
   'cmake',
-  'clangd',
+--  'clangd',
 })
 
 lsp.nvim_workspace()
@@ -74,7 +74,7 @@ local servers = {
     'pylsp',
     'quick_lint_js',
     'cmake',
-    'clangd',
+  --  'clangd',
 }
 
 require('lspconfig').tsserver.setup({
@@ -119,11 +119,11 @@ require('lspconfig').cmake.setup({
     end
 })
 
-require('lspconfig').clangd.setup({
-    single_file_support = true,
-    on_attach = function(client, bufnr)
-        print('hello clangd')
-    end
+ require('lspconfig').clangd.setup({
+     single_file_support = true,
+     on_attach = function(client, bufnr)
+         print('hello clangd')
+     end
 })
 
 lsp.setup()
