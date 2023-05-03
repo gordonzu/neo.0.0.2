@@ -57,8 +57,8 @@ return require('packer').startup(function(use)
     use({'projekt0n/github-nvim-theme', tag = 'v0.0.7',})
     use({'folke/tokyonight.nvim', as = 'tokyonight',})
     use({'oxfist/night-owl.nvim', as = 'nightowl',})
-    use({'catppuccin/nvim', as = "catppuccin"})
-
+    use({'catppuccin/nvim', as = 'catppuccin'})
+    use({'ellisonleao/gruvbox.nvim', as = 'gruvbox',})
 
 
 end)
