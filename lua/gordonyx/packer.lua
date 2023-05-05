@@ -59,6 +59,7 @@ return require('packer').startup(function(use)
     use({'oxfist/night-owl.nvim', as = 'nightowl',})
     use({'catppuccin/nvim', as = 'catppuccin'})
     use({'ellisonleao/gruvbox.nvim', as = 'gruvbox',})
-
+    use({'lukas-reineke/onedark.nvim', as = 'onedark',})
+    use({'sainnhe/gruvbox-material', as = 'gruvbox-material',})
 
 end)
