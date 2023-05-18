@@ -56,10 +56,19 @@ return require('packer').startup(function(use)
     use({'rose-pine/neovim', as = 'rose-pine',})
     use({'projekt0n/github-nvim-theme', tag = 'v0.0.7',})
     use({'folke/tokyonight.nvim', as = 'tokyonight',})
-    use({'oxfist/night-owl.nvim', as = 'nightowl',})
+    --use({'oxfist/night-owl.nvim', as = 'nightowl',})
     use({'catppuccin/nvim', as = 'catppuccin'})
     use({'ellisonleao/gruvbox.nvim', as = 'gruvbox',})
     use({'lukas-reineke/onedark.nvim', as = 'onedark',})
     use({'sainnhe/gruvbox-material', as = 'gruvbox-material',})
+    use({'junegunn/seoul256.vim', as = 'seoul256',})
+    use({'zefei/cake16', as = 'cake16',})
+
+
+
+
+
+
+
 
 end)
