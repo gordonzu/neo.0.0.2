@@ -22,17 +22,13 @@ vim.opt.timeoutlen = 1000
 vim.opt.updatetime = 50
 vim.opt.guifont = "monospace:h17"
 vim.opt.omnifunc = "v:lua.vim.lsp.omnifunc"
+vim.opt.clipboard = "unnamedplus"
 
 vim.g.NERDTreeWinSize = 60
 
--- vim.cmd([[
---   augroup MyColors
---   autocmd!
---   autocmd ColorScheme * highlight SignColumn guibg=none
---   autocmd ColorScheme * highlight LineNr guibg=none
---   autocmd ColorScheme * highlight VertSplit guibg=none guifg=gray
---   augroup end 
--- ]])
+vim.cmd([[
+  highlight LineNr guibg=none guifg=gray
+]])
 
 --vim.api.nvim_exec([[ 
 --    function! ToggleBackground()
