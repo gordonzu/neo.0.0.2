@@ -16,7 +16,6 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
-vim.opt.cursorline = true
 vim.opt.isfname:append("@-@")
 vim.opt.timeoutlen = 1000
 vim.opt.updatetime = 50
@@ -25,6 +24,7 @@ vim.opt.omnifunc = "v:lua.vim.lsp.omnifunc"
 vim.opt.clipboard = "unnamedplus"
 
 vim.g.NERDTreeWinSize = 60
+vim.g.NERDTreeHighlightCursorline = 0
 
 vim.cmd([[
   highlight LineNr guibg=none guifg=gray

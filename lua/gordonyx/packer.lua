@@ -60,6 +60,7 @@ return require('packer').startup(function(use)
     use({'lvim-tech/lvim-colorscheme', as = 'lvim-colorscheme',})
     use({'doums/darcula', as = 'darcula',})
     use({'nordtheme/vim', as = 'nord',})
+    use({'rafi/awesome-vim-colorschemes',})
 
 
 
